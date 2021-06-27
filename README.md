@@ -86,18 +86,18 @@ Luego de tener el proyecto nodejs desplegado en el servidor, procede la ejecuci�
 
 **Nota:** Cuando instalamos nodejs en un servidor Linux, el servicio quedará con el nombre nodejs que entrará en conflicto con los comandos de ejecución, para solucionar esto, realizaremos un enlace simbolico.
 ```
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
 Ya de realizar el enlace simbolico, podremos ejecutar los comandos de node js desde la linea de comandos, lo primero es instalar el ambiente del proyecto:
 ```
-npm install
+$ npm install
 ```
 **Nota:** el comando anterior descargara todas las librerias descriptas en el archivo package.json y los guardará en una nueva carpeta llamada node_modules(Esta carpeta no debe ser cargada al repositorio Git remoto).
 
 Luego para poner a correr el servidor web, dejando el API disponible para ser consumida:
 ```
-npm run dev
+$ npm run dev
 ```
 
 

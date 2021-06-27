@@ -1,0 +1,7 @@
+CREATE DATABASE mydb;
+
+CREATE TABLE persons (name VARCHAR(255));
+
+INSERT INTO persons (name) VALUES ('Robert');
+
+select * from persons

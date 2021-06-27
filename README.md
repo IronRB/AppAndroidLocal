@@ -2,12 +2,14 @@
 
 App Android en ambiente local consumiendo un servicio web API rest desplegado en una maquina virtual
 
+![Diagrama](/Diagrama/Diagram.png)
+
 ## Contenido
 
 * Instalación del ambiente del web server en Ubuntu 16.04
 * Despliegue del API en el servidor por medio del protocol FTP
 * Comandos para correr API desde la terminal
-* Crear base de datos mysql
+* Crear base de datos mysql en servidor Ubuntu
 
 ### Instalación del Web Server en Ubuntu 16.04:
 
@@ -79,6 +81,7 @@ https://goto-linux.com/es/2020/4/18/como-instalar-node.js-en-ubuntu-16.04-xenial
 ```
 Herramienta empleada FTP zilla
 ```
+![Deploy FTP](/Diagrama/DeployFTP.png)
 
 ### Comandos para correr API desde la terminal:
 
@@ -99,5 +102,30 @@ Luego para poner a correr el servidor web, dejando el API disponible para ser co
 ```
 $ npm run dev
 ```
+
+### Crear base de datos mysql en servidor Ubuntu:
+
+Lo primero es abrir la terminar, y ejecutar el siguiente comando:
+```
+$ mysql -u root -p
+```
+
+Luego creamos la base de datos:
+```
+CREATE DATABASE mydb;
+```
+
+Ya creada la base de datos, le indicamos la base de datos que se va a usar:
+Luego creamos la base de datos:
+```
+USE mydb;
+```
+
+Luego crear una tabla en esa base de datos:
+```
+CREATE TABLE persons (name VARCHAR(255));
+```
+
+
 
 

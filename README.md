@@ -1,6 +1,6 @@
 # AppAndroidLocal
 
-App Android en ambiente local consumiendo un servicio web API rest desplegado en una maquina virtual
+App Android corriendo en ambiente local ejecutado en un emulador de Android consumiendo un servicio web API rest escrita en Javascript usando en runtime node js desplegado en una maquina virtual con sistema operativo Ubuntu
 
 ![Diagrama](/Diagrama/Diagram.png)
 

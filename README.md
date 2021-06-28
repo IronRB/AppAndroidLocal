@@ -92,7 +92,16 @@ Luego de tener el proyecto nodejs desplegado en el servidor, procede la ejecuci�
 $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-Ya de realizar el enlace simbolico, podremos ejecutar los comandos de node js desde la linea de comandos, lo primero es instalar el ambiente del proyecto:
+Ya de realizar el enlace simbolico, podremos ejecutar los comandos de node js desde la linea de comandos, 
+ahora vamos al explorador de archivo del sistema operativo Ubuntu a buscar el directorio de la carpeta y daremos click derecho en "open in terminal".
+
+![Proyecto en el explorador](/Diagrama/ruta-explorador.png)
+
+Ahí nos abrirá una instancia de la terminal en la ruta del proyecto.
+
+![Proyecto en el explorador](/Diagrama/ruta-terminal.png)
+
+Lo primero es instalar el ambiente del proyecto:
 ```
 $ npm install
 ```
